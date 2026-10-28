@@ -1,6 +1,6 @@
 # Donglei (Ray) Rong · 学术个人主页
 
-一个以 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 为基础精简改编的英文 Jekyll 网站，布局参考 [MCZhi 的学术主页](https://mczhi.github.io/)。白色背景、固定顶部锚点导航、桌面左侧个人信息栏与右侧学术内容，手机和平板自动适配。
+一个以 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 为基础精简改编的英文 Jekyll 网站。白色背景、固定顶部锚点导航、桌面左侧个人信息栏与右侧学术内容，手机和平板自动适配。
 
 目前收录 **25 篇英文期刊论文、6 篇 Highlights，其中 2026 年 6 篇期刊论文**。2026-10-28 已结合本人 Google Scholar、ORCID 和出版商提交的 Crossref DOI 记录核对，新增 Sustainability 论文并合并 Scholar 重复记录。仅收录已在英文期刊发表的文章，不计入中文期刊、会议论文、SSRN 或其他预印本。核对依据见 [_PUBLICATIONS_AUDIT.md](_PUBLICATIONS_AUDIT.md)。
 
