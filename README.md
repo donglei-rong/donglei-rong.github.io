@@ -247,7 +247,7 @@ bundle exec jekyll build --baseurl /academic-test
 
 ## 发布到 GitHub Pages
 
-本项目使用仓库 [KobeRong/KobeRong.github.io](https://github.com/KobeRong/KobeRong.github.io)，网站地址为 [https://koberong.github.io/](https://koberong.github.io/)。`main` 分支更新后由 GitHub Actions 构建和部署。后续可继续在当前对话维护这个项目：说明需要修改的内容，完成本地检查后更新同一仓库即可。以下步骤也可用于迁移到其他账号或重新部署。
+本项目使用仓库 [donglei-rong/donglei-rong.github.io](https://github.com/donglei-rong/donglei-rong.github.io)，网站地址为 [https://donglei-rong.github.io/](https://donglei-rong.github.io/)。`main` 分支更新后由 GitHub Actions 构建和部署。后续可继续在当前对话维护这个项目：说明需要修改的内容，完成本地检查后更新同一仓库即可。以下步骤也可用于迁移到其他账号或重新部署。
 
 本项目使用 **GitHub Actions 构建 Jekyll 4.4**，不使用旧版分支构建。这样可以保留当前依赖和验证步骤，最终发布的仍是纯静态网站。
 
@@ -278,7 +278,7 @@ bundle exec jekyll build --baseurl /academic-test
 5. 打开 **Actions**，查看 “Build and deploy academic homepage”。如果首次运行早于 Pages 配置而失败，在配置好后点击 **Re-run all jobs**，或在该工作流点击 **Run workflow**。
 6. 构建和部署成功后访问 `https://YOUR_USERNAME.github.io/`。部署环境名为 `github-pages`，如仓库启用环境审批，需要自行通过审批。
 
-`pages.yml` 只向 Pages 上传 `_site/`，PR 只构建验证，不发布。没有配置任何付费服务。当前账号和仓库已核对为 KobeRong；GitHub Pages 的 Source 使用 GitHub Actions。
+`pages.yml` 只向 Pages 上传 `_site/`，PR 只构建验证，不发布。没有配置任何付费服务。当前 GitHub 用户名为 `donglei-rong`，主页仓库为 `donglei-rong.github.io`；GitHub Pages 的 Source 使用 GitHub Actions。
 
 ## 每次修改后更新线上网站
 
