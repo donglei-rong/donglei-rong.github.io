@@ -1,0 +1,28 @@
+# Private source documents: never publish or commit these.
+private-source/
+private_sources/
+Donglei_Rong_Codex_Academic_Website_Pack.zip
+CV.pdf
+/*.pdf
+/*.zip
+/*.jpg
+/*.jpeg
+/*.png
+Research Statement.docx
+Teaching Statement.docx
+*.docx
+
+# Local build/runtime files
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+.cache/
+.tools/
+node_modules/
+.DS_Store
+Thumbs.db
+artifacts/
+
