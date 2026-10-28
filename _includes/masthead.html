@@ -1,0 +1,22 @@
+{% comment %}Adapted from AcadHomepage's masthead.html (MIT, Yi Ren).{% endcomment %}
+<header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="masthead__home" href="{{ '/' | relative_url }}#about-me">Homepage</a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>
+      <span>Menu</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul class="visible-links">
+        {% for link in site.data.navigation.main %}
+        {% assign section_data = site.data[link.data] %}
+        {% if section_data and section_data != empty %}
+        {% unless link.data == 'working_papers' and site.data.publication_settings.show_working_papers == false %}
+        <li class="masthead__menu-item"><a href="{% if page.url != '/' %}{{ '/' | relative_url }}{% endif %}{{ link.url }}">{{ link.title | escape }}</a></li>
+        {% endunless %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+

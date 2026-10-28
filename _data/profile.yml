@@ -1,0 +1,59 @@
+# Contact information and academic affiliation from the supplied CV; no phone number included.
+name: Donglei Rong
+site_title: Donglei Rong | Academic Homepage
+role: Postdoctoral Researcher
+institution: Georgia Institute of Technology
+department: School of Civil and Environmental Engineering
+location: Atlanta, Georgia, USA
+email: drong8@gatech.edu
+advisor: Prof. Srinivas Peeta
+avatar: /assets/images/portrait.webp
+# CSS framing uses the original portrait without retouching or altering identity.
+avatar_position: 50% 14%
+avatar_zoom: 2.1
+avatar_origin: 52% 15%
+public_cv: ''
+google_scholar: https://scholar.google.com/citations?user=v8BwSE8AAAAJ&hl=zh-CN
+researchgate: https://www.researchgate.net/profile/Rong-Donglei?ev=hdr_xprf
+orcid: https://orcid.org/0000-0002-5788-7218
+linkedin: https://www.linkedin.com/in/donglei-rong-437848344/en
+github: https://github.com/KobeRong
+institution_url: https://www.gatech.edu/
+publication_name: Donglei Rong
+publication_name_variants:
+- Donglei Rong
+- D. Rong
+- D Rong
+# Markdown paragraphs are rendered in preference to bio. The original supplied
+# bio is retained below for provenance; edit bio_paragraphs for public changes.
+bio_paragraphs:
+- >-
+  I am a **Postdoctoral Researcher** in the [School of Civil and Environmental
+  Engineering](https://ce.gatech.edu/) at the [Georgia Institute of
+  Technology](https://www.gatech.edu/), working with
+  [Prof. Srinivas Peeta](https://peeta.ce.gatech.edu/).
+  Previously, I was a short-term visiting scholar at Georgia Tech.
+- >-
+  I received my **Ph.D. in Transportation** from [Zhejiang
+  University](https://www.zju.edu.cn/english/) in June 2026, advised by
+  [Prof. Sheng Jin](https://person.zju.edu.cn/en/jinsheng). I am also a
+  Ph.D. candidate in Intelligent Transportation at [The Hong Kong Polytechnic
+  University](https://www.polyu.edu.hk/) through a dual-degree Ph.D. program,
+  advised by [Prof. Min Xu](https://www.polyu.edu.hk/ise/people/academic-staff/min-xu/).
+- >-
+  My research aims to make autonomous transportation systems **safe, interactive,
+  and trustworthy**. I study transportation safety and driving behavior,
+  interactive multi-agent prediction and planning, and learning-based autonomous
+  driving, with an emphasis on trustworthy AI and multimodal foundation models.
+bio: I am a Postdoctoral Researcher in the School of Civil and Environmental Engineering at the Georgia Institute
+  of Technology, working with Prof. Srinivas Peeta. I received my Ph.D. in Transportation from Zhejiang University
+  in June 2026 and am a Ph.D. candidate in Intelligent Transportation at The Hong Kong Polytechnic University
+  through a dual-degree Ph.D. program. My research focuses on safe, interactive, and trustworthy autonomous transportation
+  systems, including traffic safety and driving behavior, multi-agent prediction and planning, and learning-based
+  autonomous driving.
+research_interests:
+- Safe and intelligent autonomous transportation systems
+- Transportation safety and driving behavior
+- Multi-agent prediction and planning
+- End-to-end autonomous driving
+- Trustworthy AI and multimodal foundation models for transportation

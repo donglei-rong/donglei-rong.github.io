@@ -1,0 +1,134 @@
+---
+layout: default
+title: Donglei Rong
+---
+{% assign profile = site.data.profile %}
+<section id="about-me" class="about-section" aria-labelledby="about-heading">
+  <h1 id="about-heading">About Me</h1>
+  {% if profile.bio_paragraphs and profile.bio_paragraphs != empty %}
+    {% for paragraph in profile.bio_paragraphs %}{{ paragraph | markdownify }}{% endfor %}
+  {% else %}{{ profile.bio | markdownify }}{% endif %}
+  {% if profile.research_interests and profile.research_interests != empty %}
+  <p class="interest-label"><strong>Research interests</strong></p>
+  <ul class="research-interests">{% for interest in profile.research_interests %}<li>{{ interest | escape }}</li>{% endfor %}</ul>
+  {% endif %}
+</section>
+
+{% if site.data.news and site.data.news != empty %}
+<section id="news" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+  <ul class="news-list">
+    {% assign news = site.data.news | sort: 'date' | reverse %}
+    {% for item in news %}<li><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div>{% if item.emoji %}<span aria-hidden="true">{{ item.emoji }}</span> {% endif %}{{ item.text | markdownify }}{% if item.url and item.url != '' %} <a href="{{ item.url | escape }}">{{ item.link_label | default: 'Read more' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if site.data.publications and site.data.publications != empty %}
+{% assign publications = site.data.publications | sort: 'year' | reverse %}
+{% assign selected = publications | where: 'selected', true | sort: 'cv_number' %}
+<section id="publications" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
+  {% if selected != empty %}
+  <h3 id="highlights">Highlights <span class="section-count">{{ selected.size }}</span></h3>
+  <div class="publication-list highlights-list">{% for pub in selected %}{% include publication.html publication=pub prefix="highlight" %}{% endfor %}</div>
+  {% endif %}
+  {% assign publication_types = publications | map: 'type' | uniq %}
+  <div class="all-publications-heading"><h3 id="all-publications">All Publications <span class="section-count">{{ publications.size }}</span></h3><span class="publication-scope">{% if site.data.publication_settings.scope_label %}{{ site.data.publication_settings.scope_label | escape }}{% elsif publication_types.size == 1 and publication_types.first == 'journal' %}Peer-reviewed journal articles{% else %}Publications by year{% endif %}</span></div>
+  <div class="publication-filters" hidden>
+    <div class="year-filters" role="group" aria-label="Filter publications by year">
+      <button type="button" data-year="all" aria-pressed="true">All years</button>
+      {% assign years = publications | map: 'year' | uniq %}
+      {% for year in years %}<button type="button" data-year="{{ year }}" aria-pressed="false">{{ year }}</button>{% endfor %}
+    </div>
+    <label class="type-filter">Type <select id="publication-type"><option value="all">All types</option>{% assign types = publications | map: 'type' | uniq %}{% for type in types %}<option value="{{ type }}">{{ type | capitalize }}</option>{% endfor %}</select></label>
+    <span id="publication-result" class="sr-only" aria-live="polite"></span>
+  </div>
+  <div id="all-publications-list" class="publication-list">
+    {% assign groups = publications | group_by: 'year' %}
+    {% for group in groups %}
+    {% assign dated = group.items | where_exp: 'paper', "paper.publication_date != nil and paper.publication_date != ''" | sort: 'publication_date' | reverse %}
+    {% assign undated = group.items | where_exp: 'paper', "paper.publication_date == nil or paper.publication_date == ''" %}
+    {% assign year_publications = dated | concat: undated %}
+    <div class="publication-year" data-year-group="{{ group.name }}">
+      <h4 class="year-heading">{{ group.name }} <span>{{ group.items.size }} {% if group.items.size == 1 %}article{% else %}articles{% endif %}</span></h4>
+      {% for pub in year_publications %}{% include publication.html publication=pub prefix="publication" %}{% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  <p class="no-results" hidden>No publications match this selection.</p>
+</section>
+{% endif %}
+
+{% if site.data.publication_settings.show_working_papers != false and site.data.working_papers and site.data.working_papers != empty %}
+<section id="working-papers" aria-labelledby="working-papers-heading">
+  <h2 id="working-papers-heading">Working Papers <span class="section-count">{{ site.data.working_papers.size }}</span></h2>
+  {% assign working_papers = site.data.working_papers | sort: 'year' | reverse %}
+  {% for manuscript in working_papers %}{% include working-paper.html manuscript=manuscript %}{% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.research.themes and site.data.research.themes != empty %}
+<section id="research" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research</h2>
+  <p>{{ site.data.research.tagline | escape }}.</p>
+  <ul class="research-themes">{% for theme in site.data.research.themes %}<li><h3>{{ theme.title | escape }}</h3><p>{{ theme.description | escape }}</p></li>{% endfor %}</ul>
+  {% if site.data.projects and site.data.projects != empty %}
+  <h3 id="research-projects">Research Projects</h3>
+  <ul class="project-list">{% for project in site.data.projects %}<li><p class="project-title">{{ project.title | escape }}</p><p><span class="project-role">{{ project.role | escape }}</span>{% if project.dates and project.dates != '' %} · {{ project.dates | escape }}{% endif %}</p><p class="secondary">{{ project.program | escape }}{% if project.grant and project.grant != '' %} · {{ project.grant | escape }}{% endif %}</p></li>{% endfor %}</ul>
+  {% endif %}
+</section>
+{% endif %}
+
+{% if site.data.appointments and site.data.appointments != empty %}
+<section id="appointments" aria-labelledby="appointments-heading">
+  <h2 id="appointments-heading">Academic Appointments</h2>
+  <ul class="cv-list">{% for appointment in site.data.appointments %}<li><div class="cv-date">{{ appointment.dates | escape }}</div><div><h3>{{ appointment.role | escape }}</h3><p>{{ appointment.institution | escape }}</p><p class="secondary">{{ appointment.department | escape }}</p>{% if appointment.mentor and appointment.mentor != '' %}<p class="secondary">Mentor: {{ appointment.mentor | escape }}</p>{% endif %}</div></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if site.data.education and site.data.education != empty %}
+<section id="education" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  <ul class="cv-list">
+    {% for education in site.data.education %}
+    <li><div class="cv-date">{{ education.dates | escape }}</div><div>
+      <h3>{{ education.degree | escape }}</h3>
+      <p>{{ education.institution | escape }}</p>
+      <p class="secondary">{{ education.department | escape }}</p>
+      {% if education.public_note and education.public_note != '' %}<p class="secondary">{{ education.public_note | escape }}</p>{% endif %}
+      {% if education.advisor and education.advisor != '' %}<p class="secondary">Advisor: {% if education.advisor_url and education.advisor_url != '' %}<a href="{{ education.advisor_url | escape }}">{{ education.advisor | escape }}</a>{% else %}{{ education.advisor | escape }}{% endif %}</p>{% endif %}
+    </div></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if site.data.teaching and site.data.teaching != empty %}
+<section id="teaching" aria-labelledby="teaching-heading">
+  <h2 id="teaching-heading">Teaching &amp; Mentoring</h2>
+  {% if site.data.teaching.philosophy %}<p>{{ site.data.teaching.philosophy | escape }}</p>{% endif %}
+  {% if site.data.teaching.experience != empty %}<h3>Teaching Experience</h3><ul class="cv-list teaching-list">{% assign teaching_experience = site.data.teaching.experience | sort: 'year' | reverse %}{% for experience in teaching_experience %}<li><div class="cv-date">{{ experience.year }}</div><div><h4>{{ experience.title | escape }}</h4><p>{{ experience.institution | escape }}</p><p class="secondary">{{ experience.level | escape }}</p></div></li>{% endfor %}</ul>{% endif %}
+  {% if site.data.teaching.mentoring and site.data.teaching.mentoring != empty %}<h3>Research Mentoring</h3><ul class="simple-list">{% for mentoring in site.data.teaching.mentoring %}<li><strong>{{ mentoring.institution | escape }}</strong> — {{ mentoring.students | escape }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.teaching.interests != empty %}<h3>Teaching Interests</h3><p>{{ site.data.teaching.interests | join: '; ' | escape }}.</p>{% endif %}
+</section>
+{% endif %}
+
+{% if site.data.awards and site.data.awards != empty %}
+<section id="awards" aria-labelledby="awards-heading">
+  <h2 id="awards-heading">Honors &amp; Awards</h2>
+  <ul class="cv-list awards-list">{% assign awards = site.data.awards | sort: 'sort_year' | reverse %}{% for award in awards %}<li><div class="cv-date">{{ award.years | escape }}</div><div><h3>{{ award.award | escape }}</h3>{% if award.organization and award.organization != '' %}<p class="secondary">{{ award.organization | escape }}</p>{% endif %}{% if award.public_note and award.public_note != '' %}<p class="secondary">{{ award.public_note | escape }}</p>{% endif %}</div></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if site.data.services and site.data.services != empty %}
+<section id="services" aria-labelledby="services-heading">
+  <h2 id="services-heading">Academic Services</h2>
+  {% if site.data.services.editorial and site.data.services.editorial != empty %}<h3>Editorial Service</h3><ul class="simple-list">{% for editorial in site.data.services.editorial %}<li><strong>{{ editorial.role | escape }}</strong>, {{ editorial.journal | escape }} ({{ editorial.year }}).<br><span class="secondary">{{ editorial.topic | escape }}</span></li>{% endfor %}</ul>{% endif %}
+  {% if site.data.services.journal_reviewing and site.data.services.journal_reviewing != empty %}<h3>Journal Reviewer</h3><ul class="service-journals">{% for journal in site.data.services.journal_reviewing %}<li>{{ journal | escape }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.services.conference_reviewing and site.data.services.conference_reviewing != empty %}<h3>Conference Reviewer</h3><ul class="simple-list">{% for conference in site.data.services.conference_reviewing %}<li>{{ conference | escape }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.services.program_committee and site.data.services.program_committee != empty %}<h3>Program Committee</h3><ul class="simple-list">{% for item in site.data.services.program_committee %}<li>{{ item | markdownify }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.services.workshops and site.data.services.workshops != empty %}<h3>Workshop Organization</h3><ul class="simple-list">{% for item in site.data.services.workshops %}<li>{{ item | markdownify }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.services.other and site.data.services.other != empty %}<h3>Other Academic Services</h3><ul class="simple-list">{% for item in site.data.services.other %}<li>{{ item | markdownify }}</li>{% endfor %}</ul>{% endif %}
+</section>
+{% endif %}

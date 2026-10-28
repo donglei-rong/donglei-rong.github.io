@@ -1,0 +1,12 @@
+{% assign manuscript = include.manuscript %}
+<article class="working-paper" id="working-paper-{{ manuscript.id | escape }}" aria-labelledby="title-working-paper-{{ manuscript.id | escape }}">
+  <h3 class="publication__title" id="title-working-paper-{{ manuscript.id | escape }}"><a href="{{ manuscript.preprint_url | escape }}">{{ manuscript.title | escape }}</a></h3>
+  <p class="publication__authors">{% include authors.html authors=manuscript.authors %}</p>
+  <p class="publication__venue">{% if manuscript.status == 'under_review' %}Manuscript under review{% else %}Preprint{% endif %}<span class="venue-year"> · {{ manuscript.year }}</span></p>
+  <div class="publication__resources">
+    <a href="{{ manuscript.preprint_url | escape }}">Preprint <span aria-hidden="true">↗</span></a>
+    {% if manuscript.code_url and manuscript.code_url != '' %}<a href="{{ manuscript.code_url | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if manuscript.project_url and manuscript.project_url != '' %}<a href="{{ manuscript.project_url | escape }}">Project <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+  {% if manuscript.summary and manuscript.summary != '' %}<div class="publication__summary">{{ manuscript.summary | markdownify }}</div>{% endif %}
+</article>

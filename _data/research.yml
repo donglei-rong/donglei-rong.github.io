@@ -1,0 +1,14 @@
+# Research direction summaries based on supplied Research Statement, suitable for a public website.
+tagline: Safe, Interactive, and Trustworthy Autonomous Transportation Systems
+themes:
+- title: Identifying Risk Before a Crash
+  description: Safety-critical driving behavior, near-miss analysis, cyber-physical safety, and counterfactual
+    evaluation of autonomous vehicles.
+- title: Interactive Prediction and Planning
+  description: Closed-loop, multi-agent prediction and motion planning that account for how autonomous and human-driven
+    vehicles influence one another.
+- title: Trustworthy Multimodal Models for Driving
+  description: End-to-end driving, vision-language-action models, generative trajectory models, uncertainty-aware
+    evaluation, and physical safety constraints.
+note: Neutral site summary of supplied Research Statement; intentionally omits University of Cincinnati-specific
+  faculty application material.

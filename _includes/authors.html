@@ -1,0 +1,11 @@
+{%- assign author_string = include.authors | escape -%}
+{%- assign author_names = site.data.profile.publication_name_variants -%}
+{%- if author_names == nil or author_names == empty -%}
+  {%- assign author_names = site.data.profile.publication_name | default: 'D. Rong' | split: '|' -%}
+{%- endif -%}
+{%- for author_name in author_names -%}
+  {%- assign escaped_name = author_name | escape -%}
+  {%- assign author_bold = '<strong>' | append: escaped_name | append: '</strong>' -%}
+  {%- assign author_string = author_string | replace: escaped_name, author_bold -%}
+{%- endfor -%}
+{{- author_string -}}

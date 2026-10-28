@@ -1,0 +1,29 @@
+main:
+  - title: About Me
+    url: "#about-me"
+    data: profile
+  - title: News
+    url: "#news"
+    data: news
+  - title: Publications
+    url: "#publications"
+    data: publications
+  - title: Working Papers
+    url: "#working-papers"
+    data: working_papers
+  - title: Research
+    url: "#research"
+    data: research
+  - title: Education
+    url: "#education"
+    data: education
+  - title: Teaching & Mentoring
+    url: "#teaching"
+    data: teaching
+  - title: Honors & Awards
+    url: "#awards"
+    data: awards
+  - title: Academic Services
+    url: "#services"
+    data: services
+

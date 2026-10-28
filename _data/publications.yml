@@ -1,0 +1,757 @@
+# English-language journal articles only; DOI metadata checked 2026-10-28.
+---
+- id: cv-journal-01
+  cv_number: 1
+  title: HybridLoss—An Adaptive Planning-Oriented Loss Function for End-to-End Autonomous Vehicle
+  authors: Donglei Rong, Chengcheng Yang, Congcong Bai, Wentong Guo, Sheng Jin, and Min Xu
+  venue: IEEE Transactions on Automation Science and Engineering
+  year: 2026
+  type: journal
+  doi: 10.1109/TASE.2026.3671465
+  paper_url: https://doi.org/10.1109/TASE.2026.3671465
+  selected: true
+  image: "/assets/images/publications/cv-journal-01.webp"
+  image_alt: >-
+    Interaction between autonomous and human-driven vehicles, contrasting real, predicted and planned trajectories.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 446
+  image_height: 242
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2026'
+  volume: '23'
+  pages: 7049-7064
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TASE.2026.3671465
+  last_verified: '2026-10-28'
+  pdf_url: https://ira.lib.polyu.edu.hk/bitstream/10397/119389/1/Rong_Adaptive_Planning_Oriented.pdf
+- id: cv-journal-02
+  cv_number: 2
+  title: Safe and Interactive Integration of Prediction and Planning for Autonomous Vehicles With Residual Chain
+    Loss
+  authors: Donglei Rong, Congcong Bai, Wenbin Yao, Qiaoqiao Ren, Sheng Jin, and Min Xu
+  venue: IEEE Transactions on Vehicular Technology
+  year: 2026
+  type: journal
+  doi: 10.1109/TVT.2026.3681905
+  paper_url: https://doi.org/10.1109/TVT.2026.3681905
+  selected: true
+  image: "/assets/images/publications/cv-journal-02.webp"
+  image_alt: Residual-chain integration of perception, prediction, safety assessment and interactive planning.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 838
+  image_height: 471
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2026-09
+  volume: '75'
+  issue: '9'
+  pages: 18926-18938
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TVT.2026.3681905
+  last_verified: '2026-10-28'
+- id: cv-journal-16
+  cv_number: 16
+  title: A semi-SPO (smart predict then optimize) method for electric bus scheduling optimization
+  authors: Chengcheng Yang, Gang Yu, Jun Jing, Congcong Bai, Donglei Rong, Sheng Jin, and Cheng Xu
+  venue: Proceedings of the Institution of Civil Engineers - Transport
+  year: 2026
+  type: journal
+  doi: 10.1680/jtran.24.00130
+  paper_url: https://doi.org/10.1680/jtran.24.00130
+  selected: false
+  image: "/assets/images/publications/journal-covers/ice-transport.webp"
+  image_alt: >-
+    Representative journal cover of Proceedings of the Institution of Civil Engineers-Transport; not the specific
+    issue containing this article.
+  image_kind: journal-cover
+  image_source_url: https://www.emerald.com/jtran
+  image_asset_url: https://ars.els-cdn.com/content/image/X0965092X.jpg
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 576
+  image_height: 768
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2026-04-17'
+  volume: '179'
+  issue: '2'
+  pages: 132-144
+  published_online: '2025-07-30'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1680/jtran.24.00130
+  last_verified: '2026-10-28'
+- id: cv-journal-17
+  cv_number: 17
+  title: 'Explicit and implicit HMI for tunnel blind spot: insights from a naturalistic driving experiment'
+  authors: Beining Zhu, Liyuanyuan Yuan, Rujie Wang, Wenbin Yao, Donglei Rong, Cheng Xu, and Sheng Jin
+  venue: Traffic Injury Prevention
+  year: 2026
+  type: journal
+  doi: 10.1080/15389588.2026.2681921
+  paper_url: https://doi.org/10.1080/15389588.2026.2681921
+  selected: false
+  image: "/assets/images/publications/journal-covers/traffic-injury-prevention.webp"
+  image_alt: Representative journal cover of Traffic Injury Prevention; not the specific issue containing this article.
+  image_kind: journal-cover
+  image_source_url: https://www.tandfonline.com/journals/gcpi20
+  image_asset_url: https://www.tandfonline.com/action/showCoverImage?journalCode=gcpi20
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 200
+  image_height: 259
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2026-06-29'
+  pages: 1-11
+  published_online: '2026-06-29'
+  publication_status: online_first
+  metadata_source_url: https://api.crossref.org/works/10.1080/15389588.2026.2681921
+  last_verified: '2026-10-28'
+- id: cv-journal-24
+  cv_number: 24
+  title: 'Exploring bus service demand in emerging business formats: A text mining analysis'
+  authors: >-
+    Chunqin Zhang, Waner Li, Jiachen Shou, Hongbin Ma, Junyan Xiang, Martin Skitmore, Xian Liu, Donglei Rong, and
+    Wenbin Yao
+  venue: Transport Policy
+  year: 2026
+  type: journal
+  doi: 10.1016/j.tranpol.2026.104010
+  paper_url: https://doi.org/10.1016/j.tranpol.2026.104010
+  selected: false
+  image: "/assets/images/publications/cv-journal-24.webp"
+  image_alt: Social-media data acquisition, text filtering and topic-modeling workflow for bus service demand.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.tranpol.2026.104010
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S0967070X2600020X-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 839
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2026-04
+  volume: '179'
+  pages: '104010'
+  article_number: '104010'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.tranpol.2026.104010
+  last_verified: '2026-10-28'
+- id: cv-journal-03
+  cv_number: 3
+  title: Multi-Vehicle Collaborative Trajectory Planning Based on Kaldor-Hicks Improvement
+  authors: Donglei Rong, Wenbin Yao, Chengcheng Yang, Congcong Bai, and Sheng Jin
+  venue: IEEE Transactions on Automation Science and Engineering
+  year: 2025
+  type: journal
+  doi: 10.1109/TASE.2025.3542840
+  paper_url: https://doi.org/10.1109/TASE.2025.3542840
+  selected: true
+  image: "/assets/images/publications/cv-journal-03.webp"
+  image_alt: >-
+    Single-vehicle and multi-vehicle objective functions with Kaldor-Hicks loss-gain judgement and weight optimization.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 441
+  image_height: 288
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2025'
+  volume: '22'
+  pages: 12512-12525
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TASE.2025.3542840
+  last_verified: '2026-10-28'
+- id: cv-journal-04
+  cv_number: 4
+  title: Smart Prediction-Planning Algorithm for Connected and Autonomous Vehicle Based on Social Value Orientation
+  authors: Donglei Rong, Yuefeng Wu, Wenjun Du, Chengcheng Yang, Sheng Jin, Min Xu, and Fujian Wang
+  venue: Journal of Intelligent and Connected Vehicles
+  year: 2025
+  type: journal
+  doi: 10.26599/JICV.2024.9210053
+  paper_url: https://doi.org/10.26599/JICV.2024.9210053
+  selected: true
+  image: "/assets/images/publications/cv-journal-04.webp"
+  image_alt: >-
+    Mixed-traffic lane-change interactions among CAVs and HDVs with normal, altruistic and egoistic driving behaviors.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 750
+  image_height: 490
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-03
+  volume: '8'
+  issue: '1'
+  pages: 9210053-1-9210053-17
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.26599/JICV.2024.9210053
+  last_verified: '2026-10-28'
+  article_number: '9210053'
+  pdf_url: https://ira.lib.polyu.edu.hk/bitstream/10397/115041/1/Rong_Smart_Prediction-Planning_Algorithm.pdf
+- id: cv-journal-13
+  cv_number: 13
+  title: >-
+    Multi-source temporal attention fusion network (MTAFN) for driving risk assessment based on naturalistic driving
+    data
+  authors: Congcong Bai, Chengcheng Yang, Donglei Rong, Wentong Guo, Xi Gao, Wenbin Yao, and Sheng Jin
+  venue: Expert Systems with Applications
+  year: 2025
+  type: journal
+  doi: 10.1016/j.eswa.2025.127502
+  paper_url: https://doi.org/10.1016/j.eswa.2025.127502
+  selected: false
+  image: "/assets/images/publications/cv-journal-13.webp"
+  image_alt: >-
+    MTAFN research flowchart: multimodal data preprocessing, risk-level labeling, model training and driving-risk
+    assessment.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.eswa.2025.127502
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S0957417425011248-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 587
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-06
+  volume: '279'
+  pages: '127502'
+  article_number: '127502'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.eswa.2025.127502
+  last_verified: '2026-10-28'
+- id: cv-journal-14
+  cv_number: 14
+  title: >-
+    Collaborative optimization of battery electric bus scheduling and charging considering arterial signal coordination
+    under connected environment
+  authors: >-
+    Chengcheng Yang, Sheng Jin, Kun Gao, Donglei Rong, Congcong Bai, Xi Gao, Xinyi Shen, Wenbin Yao, and Adjé Alagbé
+    Jérémie
+  venue: Applied Energy
+  year: 2025
+  type: journal
+  doi: 10.1016/j.apenergy.2025.126166
+  paper_url: https://doi.org/10.1016/j.apenergy.2025.126166
+  selected: false
+  image: "/assets/images/publications/cv-journal-14.webp"
+  image_alt: >-
+    Collaborative signal coordination, electric bus trajectory control and station charging optimization framework.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.apenergy.2025.126166
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S0306261925008967-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 780
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-09
+  volume: '394'
+  pages: '126166'
+  article_number: '126166'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.apenergy.2025.126166
+  last_verified: '2026-10-28'
+- id: cv-journal-18
+  cv_number: 18
+  title: >-
+    Hybrid data-model driven trajectory prediction on highways: Integrating anticipatory interaction awareness and
+    personalized driving preferences
+  authors: Congcong Bai, Xi Gao, Mengdi Chen, Wentong Guo, Donglei Rong, Chengcheng Yang, and Sheng Jin
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  year: 2025
+  type: journal
+  doi: 10.1016/j.trc.2025.105351
+  paper_url: https://doi.org/10.1016/j.trc.2025.105351
+  selected: false
+  image: "/assets/images/publications/cv-journal-18.webp"
+  image_alt: Anticipatory interaction awareness and iterative perception-prediction-planning control scheme.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.trc.2025.105351
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S0968090X25003559-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 669
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-11
+  volume: '180'
+  pages: '105351'
+  article_number: '105351'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.trc.2025.105351
+  last_verified: '2026-10-28'
+- id: cv-journal-19
+  cv_number: 19
+  title: >-
+    Sustainable urban charging infrastructure: The role of electric bus charging stations in alleviating charging
+    demand and improving charging accessibility
+  authors: Xi Gao, Yicong Gao, Congcong Bai, Chengcheng Yang, Donglei Rong, Wenbin Yao, Kun Gao, and Sheng Jin
+  venue: Sustainable Cities and Society
+  year: 2025
+  type: journal
+  doi: 10.1016/j.scs.2025.106752
+  paper_url: https://doi.org/10.1016/j.scs.2025.106752
+  selected: false
+  image: "/assets/images/publications/cv-journal-19.webp"
+  image_alt: Data, agent-based simulations and charging policy evaluation for electric bus charging infrastructure.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.scs.2025.106752
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S2210670725006262-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 1172
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-09
+  volume: '131'
+  pages: '106752'
+  article_number: '106752'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.scs.2025.106752
+  last_verified: '2026-10-28'
+- id: cv-journal-20
+  cv_number: 20
+  title: >-
+    A Robust Method for Bus Scheduling and Passenger Flow Coordination Considering Arterial Signal Coordination
+    Under Connected Environment
+  authors: >-
+    Chengcheng Yang, Kairui Liu, Sheng Jin, Kun Gao, Congcong Bai, Donglei Rong, Wenbin Yao, Xi Gao, and Wentong
+    Guo
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  year: 2025
+  type: journal
+  doi: 10.1109/TITS.2025.3598761
+  paper_url: https://doi.org/10.1109/TITS.2025.3598761
+  selected: false
+  image: "/assets/images/publications/journal-covers/ieee-tits.webp"
+  image_alt: >-
+    Representative journal cover of IEEE Transactions on Intelligent Transportation Systems; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ieee-itsc.org/2018/special-issues.html
+  image_asset_url: >-
+    https://ieee-itsc.org/2018/uploads/5/0/3/9/50391481/cover-of-ieee-transactions-on-its-vol-18-no-12-december-2017_orig.png
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 618
+  image_height: 800
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2025-11
+  volume: '26'
+  issue: '11'
+  pages: 19845-19861
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TITS.2025.3598761
+  last_verified: '2026-10-28'
+- id: cv-journal-05
+  cv_number: 5
+  title: Hybrid Trajectory Planning for Connected and Autonomous Vehicle Considering Communication Spoofing Attacks
+  authors: Donglei Rong, Sheng Jin, Wenbin Yao, Chengcheng Yang, Congcong Bai, and Adjé Jérémie Alagbé
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  year: 2024
+  type: journal
+  doi: 10.1109/TITS.2024.3373818
+  paper_url: https://doi.org/10.1109/TITS.2024.3373818
+  selected: true
+  image: "/assets/images/publications/cv-journal-05.webp"
+  image_alt: >-
+    Adaptive safety model and lateral and longitudinal trajectory planning under V2V communication spoofing attacks.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 466
+  image_height: 352
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2024-09
+  volume: '25'
+  issue: '9'
+  pages: 11961-11976
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TITS.2024.3373818
+  last_verified: '2026-10-28'
+- id: cv-journal-06
+  cv_number: 6
+  title: Integration of Multi-Vehicle Prediction and Planning Based on Social Value Orientation in Mixed Traffic
+  authors: Donglei Rong, Sheng Jin, Min Xu, Wenbin Yao, Chengcheng Yang, Congcong Bai, and Adjé Jérémie Alagbé
+  venue: IEEE Transactions on Intelligent Vehicles
+  year: 2024
+  type: journal
+  doi: 10.1109/TIV.2024.3442214
+  paper_url: https://doi.org/10.1109/TIV.2024.3442214
+  selected: true
+  image: "/assets/images/publications/cv-journal-06.webp"
+  image_alt: Social-value-oriented integration of multi-vehicle prediction and motion planning.
+  image_kind: figure
+  image_credit: User-provided research image
+  image_width: 1600
+  image_height: 754
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2024'
+  pages: 1-13
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TIV.2024.3442214
+  last_verified: '2026-10-28'
+- id: cv-journal-07
+  cv_number: 7
+  title: Connected and Autonomous Vehicle Trajectory Planning Considering Communication Delay
+  authors: Donglei Rong, Sheng Jin, and Chengcheng Yang
+  venue: IEEE Transactions on Vehicular Technology
+  year: 2024
+  type: journal
+  doi: 10.1109/TVT.2024.3395637
+  paper_url: https://doi.org/10.1109/TVT.2024.3395637
+  selected: false
+  image: "/assets/images/publications/journal-covers/ieee-tvt.webp"
+  image_alt: >-
+    Representative journal cover of IEEE Transactions on Vehicular Technology; not the specific issue containing
+    this article.
+  image_kind: journal-cover
+  image_source_url: https://vtsociety.org/publication/ieee-transactions-vehicular-technology
+  image_asset_url: >-
+    https://vtsociety.org/files/ieeevts/styles/responsive_3_4_500w/public/images/publications/publication-cover_4_0.png?itok=1m4evux3
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 500
+  image_height: 666
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2024-09
+  volume: '73'
+  issue: '9'
+  pages: 12668-12681
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TVT.2024.3395637
+  last_verified: '2026-10-28'
+- id: cv-journal-08
+  cv_number: 8
+  title: Safety analysis of autonomous vehicles based on target detection error
+  authors: Donglei Rong, Sheng Jin, Bokun Liu, and Wenbin Yao
+  venue: IET Intelligent Transport Systems
+  year: 2024
+  type: journal
+  doi: 10.1049/itr2.12480
+  paper_url: https://doi.org/10.1049/itr2.12480
+  selected: false
+  image: "/assets/images/publications/journal-covers/iet-intelligent-transport-systems.webp"
+  image_alt: >-
+    Representative journal cover of IET Intelligent Transport Systems; not the specific issue containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ietresearch.onlinelibrary.wiley.com/journal/17519578
+  image_asset_url: https://ietresearch.onlinelibrary.wiley.com/action/showCoverImage?journalCode=17519578
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 640
+  image_height: 868
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2024-05
+  volume: '18'
+  issue: '5'
+  pages: 932-948
+  published_online: '2024-01-02'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1049/itr2.12480
+  last_verified: '2026-10-28'
+- id: cv-journal-15
+  cv_number: 15
+  title: >-
+    Collaborative optimization of intersection signals and speed guidance for buses run on overlapping route segments
+    under connected environment
+  authors: Chengcheng Yang, Sheng Jin, Wenbin Yao, Donglei Rong, Congcong Bai, and Jérémie Adjé Alagbé
+  venue: Computer-Aided Civil and Infrastructure Engineering
+  year: 2024
+  type: journal
+  doi: 10.1111/mice.13289
+  paper_url: https://doi.org/10.1111/mice.13289
+  selected: false
+  image: "/assets/images/publications/journal-covers/computer-aided-civil.webp"
+  image_alt: >-
+    Representative journal cover of Computer‐Aided Civil and Infrastructure Engineering; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://www.sciencedirect.com/journal/computer-aided-civil-and-infrastructure-engineering
+  image_asset_url: https://ars.els-cdn.com/content/image/X10939687.jpg
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 576
+  image_height: 768
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2024-11
+  volume: '39'
+  issue: '21'
+  pages: 3289-3316
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1111/mice.13289
+  last_verified: '2026-10-28'
+- id: cv-journal-21
+  cv_number: 21
+  title: A multimodal data-driven approach for driving risk assessment
+  authors: Congcong Bai, Sheng Jin, Jun Jing, Chengcheng Yang, Wenbin Yao, Donglei Rong, and Jérémie Adjé Alagbé
+  venue: 'Transportation Research Part E: Logistics and Transportation Review'
+  year: 2024
+  type: journal
+  doi: 10.1016/j.tre.2024.103678
+  paper_url: https://doi.org/10.1016/j.tre.2024.103678
+  selected: false
+  image: "/assets/images/publications/cv-journal-21.webp"
+  image_alt: Urban, suburban and highway study routes used for multimodal driving-risk assessment.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.tre.2024.103678
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S1366554524002692-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1299
+  image_height: 551
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2024-09
+  volume: '189'
+  pages: '103678'
+  article_number: '103678'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.tre.2024.103678
+  last_verified: '2026-10-28'
+- id: cv-journal-09
+  cv_number: 9
+  title: Improved Speed Control Strategy for Mixed Traffic Flow Considering Roadside Unit
+  authors: Wei Hao, Donglei Rong, Zhaolei Zhang, Young-Ji Byon, and Daxin Tian
+  venue: 'Journal of Transportation Engineering, Part A: Systems'
+  year: 2023
+  type: journal
+  doi: 10.1061/JTEPBS.TEENG-7428
+  paper_url: https://doi.org/10.1061/JTEPBS.TEENG-7428
+  selected: false
+  image: "/assets/images/publications/journal-covers/asce-transportation-part-a.webp"
+  image_alt: >-
+    Representative journal cover of Journal of Transportation Engineering, Part A: Systems; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ascelibrary.org/journal/jtepbs
+  image_asset_url: https://ascelibrary.org/action/showCoverImage?journalCode=jtepbs
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 195
+  image_height: 252
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2023-11-01'
+  volume: '149'
+  issue: '11'
+  article_number: '04023111'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1061/JTEPBS.TEENG-7428
+  last_verified: '2026-10-28'
+- id: cv-journal-22
+  cv_number: 22
+  title: A novel self-adaption macroscopic fundamental diagram considering network heterogeneity
+  authors: Wenbin Yao, Nuo Chen, Hongyang Su, Youwei Hu, Sheng Jin, and Donglei Rong
+  venue: 'Physica A: Statistical Mechanics and its Applications'
+  year: 2023
+  type: journal
+  doi: 10.1016/j.physa.2023.128531
+  paper_url: https://doi.org/10.1016/j.physa.2023.128531
+  selected: false
+  image: "/assets/images/publications/cv-journal-22.webp"
+  image_alt: Flowchart of the self-adapting macroscopic fundamental diagram method.
+  image_kind: figure
+  image_source_url: https://doi.org/10.1016/j.physa.2023.128531
+  image_asset_url: https://ars.els-cdn.com/content/image/1-s2.0-S0378437123000869-gr1_lrg.jpg
+  image_credit: Figure 1 from the cited article; original publisher image
+  image_width: 1600
+  image_height: 804
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2023-03
+  volume: '613'
+  pages: '128531'
+  article_number: '128531'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.physa.2023.128531
+  last_verified: '2026-10-28'
+- id: cv-journal-23
+  cv_number: 23
+  title: Analysis of Spatiotemporal Factors Affecting Traffic Safety Based on Multisource Data Fusion
+  authors: Cheng Xu, Zuoming Zhang, Fengjie Fu, Wenbin Yao, Hongyang Su, Youwei Hu, Donglei Rong, and Sheng Jin
+  venue: 'Journal of Transportation Engineering, Part A: Systems'
+  year: 2023
+  type: journal
+  doi: 10.1061/JTEPBS.TEENG-7990
+  paper_url: https://doi.org/10.1061/JTEPBS.TEENG-7990
+  selected: false
+  image: "/assets/images/publications/journal-covers/asce-transportation-part-a.webp"
+  image_alt: >-
+    Representative journal cover of Journal of transportation engineering, Part A: Systems; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ascelibrary.org/journal/jtepbs
+  image_asset_url: https://ascelibrary.org/action/showCoverImage?journalCode=jtepbs
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 195
+  image_height: 252
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2023-10-01'
+  volume: '149'
+  issue: '10'
+  article_number: '04023098'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1061/JTEPBS.TEENG-7990
+  last_verified: '2026-10-28'
+- id: cv-journal-10
+  cv_number: 10
+  title: >-
+    Development of a Safety Prediction Method for Arterial Roads Based on Big-Data Technology and Stacked AutoEncoder-Gated
+    Recurrent Unit
+  authors: Wei Hao, Donglei Rong, Zhaolei Zhang, Qiyu Wu, Young-Ji Byon, Kefu Yi, Jinjun Tang, and Nengchao Lyu
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  year: 2022
+  type: journal
+  doi: 10.1109/TITS.2022.3172480
+  paper_url: https://doi.org/10.1109/TITS.2022.3172480
+  selected: false
+  image: "/assets/images/publications/journal-covers/ieee-tits.webp"
+  image_alt: >-
+    Representative journal cover of IEEE Transactions on Intelligent Transportation Systems; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ieee-itsc.org/2018/special-issues.html
+  image_asset_url: >-
+    https://ieee-itsc.org/2018/uploads/5/0/3/9/50391481/cover-of-ieee-transactions-on-its-vol-18-no-12-december-2017_orig.png
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 618
+  image_height: 800
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: 2022-11
+  volume: '23'
+  issue: '11'
+  pages: 20110-20122
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1109/TITS.2022.3172480
+  last_verified: '2026-10-28'
+- id: cv-journal-11
+  cv_number: 11
+  title: Stability Analysis and Speed-Coordinated Control of Mixed Traffic Flow in Expressway Merging Area
+  authors: Wei Hao, Donglei Rong, Zhaolei Zhang, Young-Ji Byon, Nengchao Lv, and Ying Chen
+  venue: 'Journal of Transportation Engineering, Part A: Systems'
+  year: 2022
+  type: journal
+  doi: 10.1061/JTEPBS.0000755
+  paper_url: https://doi.org/10.1061/JTEPBS.0000755
+  selected: false
+  image: "/assets/images/publications/journal-covers/asce-transportation-part-a.webp"
+  image_alt: >-
+    Representative journal cover of Journal of Transportation Engineering, Part A: Systems; not the specific issue
+    containing this article.
+  image_kind: journal-cover
+  image_source_url: https://ascelibrary.org/journal/jtepbs
+  image_asset_url: https://ascelibrary.org/action/showCoverImage?journalCode=jtepbs
+  image_credit: Representative journal cover; not an article figure or a claim about the publication issue
+  image_width: 195
+  image_height: 252
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2022-11-01'
+  volume: '148'
+  issue: '11'
+  article_number: '04022098'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1061/JTEPBS.0000755
+  last_verified: '2026-10-28'
+- id: cv-journal-12
+  cv_number: 12
+  title: Traffic Status Prediction of Arterial Roads Based on the Deep Recurrent Q-Learning
+  authors: Wei Hao, Donglei Rong, Kefu Yi, Qiang Zeng, Zhibo Gao, Wenguang Wu, Chongfeng Wei, and Biljana Scepanovic
+  venue: Journal of Advanced Transportation
+  year: 2020
+  type: journal
+  doi: 10.1155/2020/8831521
+  paper_url: https://doi.org/10.1155/2020/8831521
+  selected: false
+  image: "/assets/images/publications/cv-journal-12.webp"
+  image_alt: >-
+    First page of Traffic Status Prediction of Arterial Roads Based on the Deep Recurrent Q-Learning, showing the
+    article title and author list.
+  image_kind: article-preview
+  image_source_url: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/247252691/8831521.pdf
+  image_credit: Article first page from the author repository PDF (PDF page 2); CC BY 4.0
+  image_width: 900
+  image_height: 1199
+  project_url: ''
+  code_url: ''
+  summary: ''
+  language: en
+  publication_date: '2020-09-19'
+  volume: '2020'
+  pages: 1-17
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1155/2020/8831521
+  last_verified: '2026-10-28'
+  article_number: '8831521'
+  pdf_url: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/247252691/8831521.pdf
+- id: journal-2026-green-travel-carpooling
+  doi: 10.3390/su182010418
+  selected: false
+  title: >-
+    Coupling Green Travel Mode Shift and Carpooling for Individualized Commute Guidance: A Citywide Trajectory-Based
+    Assessment of Congestion Mitigation
+  authors: Gang Yu, Hui Li, Xin Yang, Congcong Bai, Donglei Rong, Jiaqi Zeng, Liang Xu, Sheng Jin, and Wenbin Yao
+  venue: Sustainability
+  year: 2026
+  type: journal
+  language: en
+  paper_url: https://doi.org/10.3390/su182010418
+  publication_date: '2026-10-14'
+  volume: '18'
+  issue: '20'
+  pages: '10418'
+  published_online: '2026-10-14'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.3390/su182010418
+  last_verified: '2026-10-28'
+  article_number: '10418'

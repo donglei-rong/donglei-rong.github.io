@@ -1,0 +1,25 @@
+{% comment %}
+Derived from AcadHomepage _layouts/default.html, copyright (c) 2022 Yi Ren.
+Retains the masthead / sidebar / page structure; see LICENSE and NOTICE.md.
+{% endcomment %}
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}" class="no-js">
+  <head>{% include head.html %}</head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include masthead.html %}
+    <div id="main">
+      {% include sidebar.html %}
+      <main class="page" id="main-content" tabindex="-1">
+        <div class="page__inner-wrap">
+          <article class="page__content">{{ content }}</article>
+        </div>
+      </main>
+    </div>
+    <footer class="page-footer">
+      <div>© {{ site.time | date: '%Y' }} {{ site.data.profile.name | escape }}<span class="footer-separator">·</span><a href="{{ '/' | relative_url }}#about-me">Back to top ↑</a></div>
+      <div class="credits">Built with <a href="https://jekyllrb.com/">Jekyll</a> · Based on <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a></div>
+    </footer>
+  </body>
+</html>
+

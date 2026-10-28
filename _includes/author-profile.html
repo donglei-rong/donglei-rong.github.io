@@ -1,0 +1,32 @@
+{% assign profile = site.data.profile %}
+<div class="profile_box">
+  <div class="author__avatar">
+    {% if profile.avatar and profile.avatar != '' %}
+    <div class="author__avatar-frame" style="--avatar-position: {{ profile.avatar_position | default: '50% 50%' | escape }}; --avatar-zoom: {{ profile.avatar_zoom | default: 1 }}; --avatar-origin: {{ profile.avatar_origin | default: '50% 50%' | escape }};">
+      <div class="author__avatar-crop"><img class="author__portrait" src="{{ profile.avatar | relative_url }}" width="175" height="175" alt="Portrait of {{ profile.name | escape }}" fetchpriority="high" decoding="async"></div>
+    </div>
+    {% else %}
+    <div class="avatar-placeholder" role="img" aria-label="Portrait placeholder for {{ profile.name | escape }}"><span aria-hidden="true">DR</span></div>
+    {% endif %}
+  </div>
+  <div class="author__content">
+    <h2 class="author__name">{{ profile.name | escape }}</h2>
+    <p class="author__role">{{ profile.role | escape }}</p>
+    <p class="author__affiliation">{% if profile.institution_url %}<a href="{{ profile.institution_url }}">{{ profile.institution | escape }}</a>{% else %}{{ profile.institution | escape }}{% endif %}</p>
+    <p class="author__department">{{ profile.department | escape }}</p>
+  </div>
+</div>
+<ul class="author__urls">
+  {% if profile.location != '' %}<li class="author__location">{% include icon.html name="location" %}<span>{{ profile.location | escape }}</span></li>{% endif %}
+  {% if profile.email != '' %}<li><a href="mailto:{{ profile.email | escape }}">{% include icon.html name="mail" %}<span>{{ profile.email | escape }}</span></a></li>{% endif %}
+  {% assign social_keys = 'google_scholar,researchgate,orcid,linkedin,github' | split: ',' %}
+  {% assign social_labels = 'Google Scholar,ResearchGate,ORCID,LinkedIn,GitHub' | split: ',' %}
+  {% assign social_icons = 'scholar,researchgate,orcid,linkedin,github' | split: ',' %}
+  {% for key in social_keys %}
+  {% assign social_url = profile[key] %}
+  {% assign social_icon = social_icons[forloop.index0] %}
+  {% if social_url and social_url != '' %}<li><a href="{{ social_url | escape }}" rel="me noopener noreferrer">{% include icon.html name=social_icon %}<span>{{ social_labels[forloop.index0] }}</span></a></li>{% endif %}
+  {% endfor %}
+  {% if profile.public_cv and profile.public_cv != '' %}<li><a href="{{ profile.public_cv | relative_url }}" download>{% include icon.html name="document" %}<span>Curriculum Vitae <span aria-hidden="true">↗</span></span></a></li>{% endif %}
+</ul>
+

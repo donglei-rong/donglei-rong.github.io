@@ -1,0 +1,63 @@
+# For https://YOUR_USERNAME.github.io/ set url below and keep baseurl empty.
+# For a project site use baseurl: "/repository-name".
+title: Donglei Rong | Academic Homepage
+description: >-
+  Donglei Rong is a Postdoctoral Researcher at Georgia Tech, studying
+  autonomous driving, transportation safety, interactive prediction and planning,
+  and trustworthy AI.
+url: "https://koberong.github.io"
+baseurl: ""
+lang: en
+locale: en_US
+author:
+  name: Donglei Rong
+  url: "https://koberong.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+permalink: pretty
+encoding: utf-8
+strict_front_matter: true
+liquid:
+  error_mode: strict
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Defense in depth: exclude private sources independently of .gitignore.
+# scripts/validate.rb --built additionally enforces an output allowlist.
+include:
+  - assets
+exclude:
+  - private-source
+  - private_sources
+  - Donglei_Rong_Codex_Academic_Website_Pack.zip
+  - CV.pdf
+  - Research Statement.docx
+  - Teaching Statement.docx
+  - Revision Suggestions.docx
+  - 1.png
+  - 头像.jpg
+  - '*.docx'
+  - '*.zip'
+  - README.md
+  - LICENSE
+  - NOTICE.md
+  - ASSET_SOURCES.md
+  - _PUBLICATIONS_AUDIT.md
+  - CODEX_INSTRUCTIONS.md
+  - README_FIRST.md
+  - site_data
+  - scripts
+  - Start-Preview.cmd
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - artifacts
+  - .tools
+  - .cache
+  - .bundle
+  - .github
+

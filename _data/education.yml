@@ -1,0 +1,30 @@
+# Education from supplied CV; distinguish completed Zhejiang University PhD from ongoing PolyU candidacy.
+- degree: Ph.D. in Transportation
+  institution: Zhejiang University
+  department: Institute of Intelligent Transportation Systems
+  location: Hangzhou, China
+  dates: Sept. 2022–Jun. 2026
+  advisor: Prof. Sheng Jin
+  advisor_url: https://person.zju.edu.cn/en/jinsheng
+  note: ''
+- degree: Ph.D. Candidate in Intelligent Transportation
+  institution: The Hong Kong Polytechnic University
+  department: Department of Industrial and Systems Engineering
+  location: Hong Kong, China
+  dates: Sept. 2024–Present
+  advisor: Prof. Min Xu
+  advisor_url: https://www.polyu.edu.hk/ise/people/academic-staff/min-xu/
+  note: Dual-degree Ph.D. program with Zhejiang University; degree not marked completed in CV
+  public_note: Dual-degree Ph.D. program with Zhejiang University; ongoing candidacy.
+- degree: M.S. in Transportation
+  institution: Changsha University of Science and Technology
+  department: College of Transportation Engineering
+  location: Changsha, China
+  dates: Sept. 2019–Jun. 2022
+  note: ''
+- degree: B.S. in Transportation
+  institution: Zhejiang Normal University
+  department: College of Engineering
+  location: Jinhua, China
+  dates: Sept. 2015–Jun. 2019
+  note: ''

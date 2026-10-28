@@ -1,0 +1,32 @@
+{% assign pub = include.publication %}
+{% assign paper_link = pub.paper_url %}
+{% if paper_link == nil or paper_link == '' %}{% assign paper_link = 'https://doi.org/' | append: pub.doi %}{% endif %}
+<article class="publication" id="{{ include.prefix }}-{{ pub.id }}" data-year="{{ pub.year }}" data-type="{{ pub.type | default: 'journal' }}" aria-labelledby="title-{{ include.prefix }}-{{ pub.id }}">
+  <div class="publication__body">
+    <h4 class="publication__title" id="title-{{ include.prefix }}-{{ pub.id }}"><a href="{{ paper_link | escape }}">{{ pub.title | escape }}</a></h4>
+    <p class="publication__authors">{% include authors.html authors=pub.authors %}</p>
+    <p class="publication__venue"><em>{{ pub.venue | escape }}</em>{% if pub.volume and pub.volume != '' %}, {{ pub.volume | escape }}{% if pub.issue and pub.issue != '' %}({{ pub.issue | escape }}){% endif %}{% endif %}{% if pub.article_number and pub.article_number != '' %}, Article {{ pub.article_number | escape }}{% elsif pub.pages and pub.pages != '' %}, pp. {{ pub.pages | replace: '-', '–' | escape }}{% endif %}<span class="venue-year">, {{ pub.year }}</span>{% if pub.publication_status == 'online_first' %}<span class="publication__status"> · Published online</span>{% endif %}</p>
+    <div class="publication__resources">
+      <a href="{{ paper_link | escape }}">Paper <span aria-hidden="true">↗</span></a>
+      {% assign resource_keys = 'pdf_url,code_url,project_url,dataset_url,video_url' | split: ',' %}
+      {% assign resource_labels = 'PDF,Code,Project,Dataset,Video' | split: ',' %}
+      {% for key in resource_keys %}{% assign resource_url = pub[key] %}{% if resource_url and resource_url != '' %}<a href="{{ resource_url | escape }}">{{ resource_labels[forloop.index0] }} <span aria-hidden="true">↗</span></a>{% endif %}{% endfor %}
+      {% for resource in pub.resources %}{% if resource.url and resource.url != '' %}<a href="{{ resource.url | escape }}">{{ resource.label | escape }} <span aria-hidden="true">↗</span></a>{% endif %}{% endfor %}
+      <details class="bibtex"><summary>BibTeX</summary><pre><code>@article{rong{{ pub.year }}{{ pub.cv_number | default: pub.id }},
+  title = {% raw %}{{% endraw %}{{ pub.title | escape }}{% raw %}}{% endraw %},
+  author = {% raw %}{{% endraw %}{{ pub.authors | replace: ', and ', ', ' | replace: ', ', ' and ' | escape }}{% raw %}}{% endraw %},
+  journal = {% raw %}{{% endraw %}{{ pub.venue | escape }}{% raw %}}{% endraw %},
+  year = {% raw %}{{% endraw %}{{ pub.year }}{% raw %}}{% endraw %},
+{% if pub.volume and pub.volume != '' %}  volume = {% raw %}{{% endraw %}{{ pub.volume | escape }}{% raw %}}{% endraw %},
+{% endif %}{% if pub.issue and pub.issue != '' %}  number = {% raw %}{{% endraw %}{{ pub.issue | escape }}{% raw %}}{% endraw %},
+{% endif %}{% assign citation_pages = pub.article_number | default: pub.pages %}{% if citation_pages and citation_pages != '' %}  pages = {% raw %}{{% endraw %}{{ citation_pages | replace: '-', '--' | escape }}{% raw %}}{% endraw %},
+{% endif %}  url = {% raw %}{{% endraw %}{{ paper_link | escape }}{% raw %}}{% endraw %},
+  doi = {% raw %}{{% endraw %}{{ pub.doi | escape }}{% raw %}}{% endraw %}
+}</code></pre></details>
+    </div>
+    {% if pub.doi and pub.doi != '' %}<p class="publication__doi"><a href="https://doi.org/{{ pub.doi | escape }}">doi:{{ pub.doi | escape }}</a></p>{% endif %}
+    {% if pub.summary and pub.summary != '' %}<div class="publication__summary">{{ pub.summary | markdownify }}</div>{% endif %}
+    {% if pub.abstract and pub.abstract != '' %}<details class="abstract"><summary>Abstract</summary>{{ pub.abstract | markdownify }}</details>{% endif %}
+  </div>
+</article>
+
