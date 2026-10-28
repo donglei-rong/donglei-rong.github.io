@@ -1,0 +1,66 @@
+name: Build and deploy academic homepage
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Validate public data and source boundaries
+        run: bundle exec ruby scripts/validate.rb
+      - name: Configure Pages
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Build Jekyll
+        env:
+          JEKYLL_ENV: production
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          ruby -ryaml -e 'File.write("/tmp/pages.yml", {"url" => ENV.fetch("PAGES_ORIGIN", ""), "baseurl" => ENV.fetch("PAGES_BASE_PATH", "")}.to_yaml)'
+          bundle exec jekyll build --config _config.yml,/tmp/pages.yml --trace
+      - name: Check rendered site, local links and private file exclusions
+        env:
+          CHECK_BASEURL: ${{ steps.pages.outputs.base_path }}
+        run: bundle exec ruby scripts/validate.rb --built
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
