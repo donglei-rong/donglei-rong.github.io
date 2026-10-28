@@ -5,13 +5,13 @@ description: >-
   Donglei Rong is a Postdoctoral Researcher at Georgia Tech, studying
   autonomous driving, transportation safety, interactive prediction and planning,
   and trustworthy AI.
-url: "https://koberong.github.io"
+url: "https://donglei-rong.github.io"
 baseurl: ""
 lang: en
 locale: en_US
 author:
   name: Donglei Rong
-  url: "https://koberong.github.io"
+  url: "https://donglei-rong.github.io"
 markdown: kramdown
 kramdown:
   input: GFM
