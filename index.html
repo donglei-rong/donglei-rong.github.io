@@ -132,3 +132,17 @@ title: Donglei Rong
   {% if site.data.services.other and site.data.services.other != empty %}<h3>Other Academic Services</h3><ul class="simple-list">{% for item in site.data.services.other %}<li>{{ item | markdownify }}</li>{% endfor %}</ul>{% endif %}
 </section>
 {% endif %}
+
+<section id="visitors" aria-labelledby="visitors-heading">
+  <h2 id="visitors-heading">Visitor Statistics</h2>
+  {% if jekyll.environment == 'production' and site.url == 'https://donglei-rong.github.io' and site.baseurl == '' %}
+  <a href="https://info.flagcounter.com/IpkZ">
+    <img src="https://s05.flagcounter.com/map/IpkZ/size_m/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/"
+         alt="World map of visitor countries and regions with total page views" referrerpolicy="origin">
+  </a>
+  <p class="secondary"><a href="https://info.flagcounter.com/IpkZ">View visitor counts by country or region</a>.</p>
+  <p class="secondary">Flag Counter estimates visitor countries and regions from IP addresses. <a href="https://s05.flagcounter.com/privacy.html">Privacy policy</a>.</p>
+  {% else %}
+  <p class="secondary">The live visitor map and counts are available on the published homepage after activation.</p>
+  {% endif %}
+</section>
