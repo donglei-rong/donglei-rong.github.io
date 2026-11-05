@@ -1,4 +1,11 @@
-# News items are derived from CV appointment/degree dates; no invented paper acceptance dates.
+# News uses verified publication and appointment/degree dates.
+- date: '2026.11'
+  text: >-
+    Our paper, "Understanding the mechanism of gap-acceptance behavior at roundabouts:
+    A cumulative prospect theory and drift-diffusion model framework," has been published in
+    *Transportation Research Part E: Logistics and Transportation Review*.
+  url: https://www.sciencedirect.com/science/article/pii/S1366554526006927
+  link_label: Paper
 - date: '2026.07'
   text: Joined Georgia Institute of Technology as a Postdoctoral Researcher in the School of Civil and Environmental
     Engineering.
