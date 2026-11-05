@@ -755,3 +755,20 @@
   metadata_source_url: https://api.crossref.org/works/10.3390/su182010418
   last_verified: '2026-10-28'
   article_number: '10418'
+- id: journal-2026-roundabout-gap-acceptance
+  title: >-
+    Understanding the mechanism of gap-acceptance behavior at roundabouts:
+    A cumulative prospect theory and drift-diffusion model framework
+  authors: Congcong Bai, Cheng Xu, Donglei Rong, Xi Gao, Jiaqi Zeng, Meng Liu, Meng Sun, Xiangyu Li, Sheng Jin, and Wenbin Yao
+  venue: 'Transportation Research Part E: Logistics and Transportation Review'
+  year: 2026
+  type: journal
+  language: en
+  doi: 10.1016/j.tre.2026.105354
+  paper_url: https://doi.org/10.1016/j.tre.2026.105354
+  selected: false
+  publication_date: '2026-11'
+  article_number: '105354'
+  publication_status: published
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.tre.2026.105354
+  last_verified: '2026-11-05'
