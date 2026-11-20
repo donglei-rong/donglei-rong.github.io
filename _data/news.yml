@@ -1,4 +1,11 @@
 # News uses verified publication and appointment/degree dates.
+- date: '2026.11.18'
+  text: >-
+    Our paper, "A Multi-Objective Framework for Travel Mode Identification Across
+    Hierarchical Travel Semantics," has been published online in
+    *IEEE Transactions on Intelligent Transportation Systems*.
+  url: https://ieeexplore.ieee.org/document/11804482
+  link_label: Paper
 - date: '2026.11'
   text: >-
     Our paper, "Understanding the mechanism of gap-acceptance behavior at roundabouts:
