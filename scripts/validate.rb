@@ -95,7 +95,7 @@ all_data.each do |data|
   end
 end
 news = load_yaml.call("news") || []
-news.each { |item| check.call(item["date"].match?(/\A\d{4}\.(0[1-9]|1[0-2])\z/), "News dates must use YYYY.MM") }
+news.each { |item| check.call(item["date"].match?(/\A\d{4}\.(0[1-9]|1[0-2])(?:\.(0[1-9]|[12]\d|3[01]))?\z/), "News dates must use YYYY.MM or YYYY.MM.DD") }
 
 if ARGV.include?("--built")
   check.call(File.file?("_site/index.html"), "_site/index.html missing; run Jekyll first")
