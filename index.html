@@ -19,7 +19,7 @@ title: Donglei Rong
   <h2 id="news-heading">News</h2>
   <ul class="news-list">
     {% assign news = site.data.news | sort: 'date' | reverse %}
-    {% for item in news %}<li><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div>{% if item.emoji %}<span aria-hidden="true">{{ item.emoji }}</span> {% endif %}{{ item.text | markdownify }}{% if item.url and item.url != '' %} <a href="{{ item.url | escape }}">{{ item.link_label | default: 'Read more' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div></li>{% endfor %}
+    {% for item in news %}<li><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date | slice: 0, 7 }}</time><div>{% if item.emoji %}<span aria-hidden="true">{{ item.emoji }}</span> {% endif %}{{ item.text | markdownify }}{% if item.url and item.url != '' %} <a href="{{ item.url | escape }}">{{ item.link_label | default: 'Read more' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div></li>{% endfor %}
   </ul>
 </section>
 {% endif %}
