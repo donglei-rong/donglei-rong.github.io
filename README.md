@@ -2,7 +2,7 @@
 
 一个以 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 为基础精简改编的英文 Jekyll 网站。白色背景、固定顶部锚点导航、桌面左侧个人信息栏与右侧学术内容，手机和平板自动适配。
 
-目前收录 **27 篇英文期刊论文、6 篇 Highlights，其中 2026 年 8 篇期刊论文**。2026-11-19 根据 IEEE Xplore 和 Crossref 记录新增出行方式识别论文，DOI 为 `10.1109/TITS.2026.3750194`，在线发表日期为 2026-11-18。2026-11-05 根据出版商提交的 Crossref DOI 记录新增环岛间隙接受行为论文，DOI 为 `10.1016/j.tre.2026.105354`。2026-10-28 的全量核对结合了本人 Google Scholar、ORCID 和出版商记录，新增 Sustainability 论文并合并 Scholar 重复记录。仅收录已在英文期刊发表的文章，不计入中文期刊、会议论文、SSRN 或其他预印本。此前的全量核对依据见 [_PUBLICATIONS_AUDIT.md](_PUBLICATIONS_AUDIT.md)。
+目前收录 **28 篇英文期刊论文、6 篇 Highlights，其中 2026 年 9 篇期刊论文**。2026-11-23 根据出版商提交的 Crossref 记录新增城市热负担论文，DOI 为 `10.1016/j.scs.2026.108107`；发表日期保留记录中的月份精度 `2026-11`，News 使用本次更新日期。2026-11-19 根据 IEEE Xplore 和 Crossref 记录新增出行方式识别论文，DOI 为 `10.1109/TITS.2026.3750194`，在线发表日期为 2026-11-18。2026-11-05 根据出版商提交的 Crossref DOI 记录新增环岛间隙接受行为论文，DOI 为 `10.1016/j.tre.2026.105354`。2026-10-28 的全量核对结合了本人 Google Scholar、ORCID 和出版商记录，新增 Sustainability 论文并合并 Scholar 重复记录。仅收录已在英文期刊发表的文章，不计入中文期刊、会议论文、SSRN 或其他预印本。此前的全量核对依据见 [_PUBLICATIONS_AUDIT.md](_PUBLICATIONS_AUDIT.md)。
 
 论文按年份倒序分组，同年优先按已知出版日期倒序显示；没有完整日期时保留原有精度，不猜测月份或日期。作者显示完整姓名，`Donglei Rong` 自动加粗。每条论文共用纯文字模板，显示期刊、年份、卷期、页码或文章编号、DOI、可核对的 PDF / Paper / Code 等资源与 BibTeX。
 
@@ -302,5 +302,6 @@ YAML/Markdown 是可信的作者内容，支持 HTML；不要把未经审核的�
 ## 开源许可
 
 保留 AcadHomepage 的 MIT 许可证及 Yi Ren 版权声明，页面底部保留模板署名。详细改编范围见 [NOTICE.md](NOTICE.md)。
+
 
 
