@@ -24,14 +24,13 @@ publication_name_variants:
 - Donglei Rong
 - D. Rong
 - D Rong
-# Markdown paragraphs are rendered in preference to bio. The original supplied
-# bio is retained below for provenance; edit bio_paragraphs for public changes.
+# Markdown paragraphs are rendered in preference to bio. Keep bio in sync
+# as the plain-text fallback for the public introduction.
 bio_paragraphs:
 - >-
   I am a **Postdoctoral Researcher** in the [School of Civil and Environmental
   Engineering](https://ce.gatech.edu/) at the [Georgia Institute of
-  Technology](https://www.gatech.edu/), working with
-  [Prof. Srinivas Peeta](https://peeta.ce.gatech.edu/).
+  Technology](https://www.gatech.edu/).
   Previously, I was a short-term visiting scholar at Georgia Tech.
 - >-
   I received my **Ph.D. in Transportation** from [Zhejiang
@@ -46,7 +45,7 @@ bio_paragraphs:
   interactive multi-agent prediction and planning, and learning-based autonomous
   driving, with an emphasis on trustworthy AI and multimodal foundation models.
 bio: I am a Postdoctoral Researcher in the School of Civil and Environmental Engineering at the Georgia Institute
-  of Technology, working with Prof. Srinivas Peeta. I received my Ph.D. in Transportation from Zhejiang University
+  of Technology. I received my Ph.D. in Transportation from Zhejiang University
   in June 2026 and am a Ph.D. candidate in Intelligent Transportation at The Hong Kong Polytechnic University
   through a dual-degree Ph.D. program. My research focuses on safe, interactive, and trustworthy autonomous transportation
   systems, including traffic safety and driving behavior, multi-agent prediction and planning, and learning-based
