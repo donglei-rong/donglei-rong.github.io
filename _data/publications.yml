@@ -788,3 +788,20 @@
   publication_status: online_first
   metadata_source_url: https://api.crossref.org/works/10.1109/TITS.2026.3750194
   last_verified: '2026-11-19'
+- id: journal-2026-potential-heat-burden
+  title: >-
+    Analyzing the spatial concentration and inequality of potential heat burden in
+    Chinese cities: A scenario-based activity—PET coupling framework
+  authors: Wentong Guo, Wenzhu Xu, Xi Gao, Zhenhua Li, Wenbin Yao, Donglei Rong, Lu Liang, and Sheng Jin
+  venue: Sustainable Cities and Society
+  year: 2026
+  type: journal
+  language: en
+  doi: 10.1016/j.scs.2026.108107
+  paper_url: https://www.sciencedirect.com/science/article/pii/S2210670726009820
+  selected: false
+  publication_date: '2026-11'
+  article_number: '108107'
+  publication_status: online_first
+  metadata_source_url: https://api.crossref.org/works/10.1016/j.scs.2026.108107
+  last_verified: '2026-11-23'
