@@ -1,4 +1,10 @@
 # News uses verified publication and appointment/degree dates.
+- date: '2026.11.26'
+  text: >-
+    Our preprint, "SAGE-Drive: Benefit-Aware Adaptive Reasoning for Autonomous
+    Driving Planning," is now available on arXiv.
+  url: https://arxiv.org/abs/2611.29947
+  link_label: Preprint
 - date: '2026.11.23'
   text: >-
     Our paper, "Analyzing the spatial concentration and inequality of potential heat
