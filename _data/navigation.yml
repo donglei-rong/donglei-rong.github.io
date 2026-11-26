@@ -8,7 +8,7 @@ main:
   - title: Publications
     url: "#publications"
     data: publications
-  - title: Working Papers
+  - title: Preprints
     url: "#working-papers"
     data: working_papers
   - title: Research
