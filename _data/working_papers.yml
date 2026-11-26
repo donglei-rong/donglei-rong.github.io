@@ -1,3 +1,12 @@
-# Optional public preprints only. Empty data hides both the section and its nav link.
-# Do not copy private CV manuscripts here. See README for the public entry format.
-[]
+# Public preprints are listed separately from published journal articles.
+- id: sage-drive
+  title: 'SAGE-Drive: Benefit-Aware Adaptive Reasoning for Autonomous Driving Planning'
+  authors: Donglei Rong, Wenbin Yao, Congcong Bai, Xi Gao, Qiaoqiao Ren, Sheng Jin, and Cheng Xu
+  year: 2026
+  status: preprint
+  preprint_url: https://arxiv.org/abs/2611.29947
+  summary: >-
+    Benefit-aware gating selects when to invoke explicit reasoning under a fixed
+    reasoning budget for autonomous driving planning.
+  metadata_source_url: https://arxiv.org/abs/2611.29947
+  last_verified: '2026-11-26'
