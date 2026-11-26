@@ -2,7 +2,7 @@
 
 一个以 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 为基础精简改编的英文 Jekyll 网站。白色背景、固定顶部锚点导航、桌面左侧个人信息栏与右侧学术内容，手机和平板自动适配。
 
-目前收录 **28 篇英文期刊论文、6 篇 Highlights，其中 2026 年 9 篇期刊论文**。2026-11-23 根据出版商提交的 Crossref 记录新增城市热负担论文，DOI 为 `10.1016/j.scs.2026.108107`；发表日期保留记录中的月份精度 `2026-11`，News 使用本次更新日期。2026-11-19 根据 IEEE Xplore 和 Crossref 记录新增出行方式识别论文，DOI 为 `10.1109/TITS.2026.3750194`，在线发表日期为 2026-11-18。2026-11-05 根据出版商提交的 Crossref DOI 记录新增环岛间隙接受行为论文，DOI 为 `10.1016/j.tre.2026.105354`。2026-10-28 的全量核对结合了本人 Google Scholar、ORCID 和出版商记录，新增 Sustainability 论文并合并 Scholar 重复记录。仅收录已在英文期刊发表的文章，不计入中文期刊、会议论文、SSRN 或其他预印本。此前的全量核对依据见 [_PUBLICATIONS_AUDIT.md](_PUBLICATIONS_AUDIT.md)。
+目前收录 **28 篇英文期刊论文、6 篇 Highlights，其中 2026 年 9 篇期刊论文**。2026-11-23 根据出版商提交的 Crossref 记录新增城市热负担论文，DOI 为 `10.1016/j.scs.2026.108107`；发表日期保留记录中的月份精度 `2026-11`，News 使用本次更新日期。2026-11-19 根据 IEEE Xplore 和 Crossref 记录新增出行方式识别论文，DOI 为 `10.1109/TITS.2026.3750194`，在线发表日期为 2026-11-18。2026-11-05 根据出版商提交的 Crossref DOI 记录新增环岛间隙接受行为论文，DOI 为 `10.1016/j.tre.2026.105354`。2026-10-28 的全量核对结合了本人 Google Scholar、ORCID 和出版商记录，新增 Sustainability 论文并合并 Scholar 重复记录。All Publications 仅计入已发表英文期刊论文，公开预印本在 Preprints 单独展示。此前的全量核对依据见 [_PUBLICATIONS_AUDIT.md](_PUBLICATIONS_AUDIT.md)。
 
 论文按年份倒序分组，同年优先按已知出版日期倒序显示；没有完整日期时保留原有精度，不猜测月份或日期。作者显示完整姓名，`Donglei Rong` 自动加粗。每条论文共用纯文字模板，显示期刊、年份、卷期、页码或文章编号、DOI、可核对的 PDF / Paper / Code 等资源与 BibTeX。
 
@@ -15,7 +15,7 @@ _data/
   profile.yml       # 姓名、身份、简介、研究兴趣、社交链接、头像和公开 CV
   publications.yml  # 唯一的论文数据源；Highlights 也来自这里
   publication_settings.yml # 英文期刊收录口径、核对日期和 Working Papers 开关
-  working_papers.yml # 可公开的 Working Papers；当前为空，自动隐藏
+  working_papers.yml # 独立展示的公开预印本，当前收录 SAGE-Drive
   news.yml          # 新闻
   research.yml      # 三条研究主线
   projects.yml      # 项目、角色、资助项目编号
@@ -164,13 +164,13 @@ bio_paragraphs:
 
 `last_verified` 和 `metadata_source_url` 记录每条论文的核对日期与来源，方便以后更新。Scholar 同一 DOI 的重复记录只保留一篇，已正式发表文章的 SSRN 早期版本也不重复计数。网站不在运行时请求 Scholar 或 Crossref，无需 API 密钥。
 
-## Working Papers 是否展示及如何添加
+## Preprints 如何展示及添加
 
-**按当前明确要求，主页仅收录英文期刊论文，不展示或计入 Working Papers、SSRN、其他预印本及会议论文。** 本次检索虽然找到了公开的 SSRN 记录，也已按此口径排除。
+**All Publications 收录已发表英文期刊论文，Preprints 独立展示公开预印本。** 2026-11-26 按本人要求新增 SAGE-Drive（arXiv:2611.29947）。期刊论文共 28 篇，预印本共 1 篇，二者独立计数；预印本不进入期刊论文总数或 Highlights。
 
-保留 `_data/working_papers.yml` 作为以后可选功能，当前为 `[]`；`publication_settings.yml` 中 `show_working_papers: false` 会同时关闭页面与导航。只有今后明确改变收录范围时，才将 `scope` 改为 `all_publications`、修改 `scope_label` 并启用此开关。Working Papers 始终独立计数，不进入已发表论文总数或 Highlights。当前不要往此文件复制私有 CV 的在审稿件。
+预印本数据存储在 `_data/working_papers.yml`。`publication_settings.yml` 中 `show_working_papers: true` 启用页面与导航，设为 `false` 可隐藏，数据为空时也自动隐藏。`scope: english_journal_articles` 继续限定期刊论文列表的收录范围。每条预印本必须有已公开的链接。
 
-以下仅为结构说明，不是实际科研成果。确认真实内容和公开链接后，用条目替换 `[]`：
+以后添加预印本时，在列表中新增一条，结构如下：
 
 ```yaml
 - id: your-public-preprint-id
@@ -184,7 +184,7 @@ bio_paragraphs:
   summary: ''               # 可选，1–2 句英文介绍
 ```
 
-必须提供真实的公开预印本链接；可以使用 arXiv、TechRxiv 或机构存储库，不强制要求 DOI。`under_review` 只表示在审，不能写成 accepted/published。录用发表后，将该条移至 `publications.yml`，补齐正式期刊和 DOI，并从 Working Papers 移除，避免重复。
+必须提供真实的公开预印本链接；可以使用 arXiv、TechRxiv 或机构存储库，不强制要求 DOI。`under_review` 只表示在审，不能写成 accepted/published。录用发表后，将该条移至 `publications.yml`，补齐正式期刊和 DOI，并从 `working_papers.yml` 移除，避免重复。
 
 参考：[IEEE Author Center 的文章版本与预印本分享说明](https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/post-publication-policies/)。其他期刊应分别核对其现行政策。
 
@@ -302,6 +302,7 @@ YAML/Markdown 是可信的作者内容，支持 HTML；不要把未经审核的�
 ## 开源许可
 
 保留 AcadHomepage 的 MIT 许可证及 Yi Ren 版权声明，页面底部保留模板署名。详细改编范围见 [NOTICE.md](NOTICE.md)。
+
 
 
 
