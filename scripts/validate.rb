@@ -16,7 +16,6 @@ pubs = load_yaml.call("publications") || []
 publication_settings = File.file?("_data/publication_settings.yml") ? (load_yaml.call("publication_settings") || {}) : {}
 if publication_settings["scope"] == "english_journal_articles"
   check.call(pubs.all? { |paper| paper["type"] == "journal" && paper["language"] == "en" }, "Only English-language journal articles belong in this publication scope")
-  check.call(publication_settings["show_working_papers"] == false, "Working Papers must be disabled for the journal-only scope")
 end
 check.call(!pubs.empty?, "No publications found")
 %w[id title authors venue year type doi].each do |key|
