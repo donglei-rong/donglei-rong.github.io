@@ -62,7 +62,7 @@ title: Donglei Rong
 
 {% if site.data.publication_settings.show_working_papers != false and site.data.working_papers and site.data.working_papers != empty %}
 <section id="working-papers" aria-labelledby="working-papers-heading">
-  <h2 id="working-papers-heading">Working Papers <span class="section-count">{{ site.data.working_papers.size }}</span></h2>
+  <h2 id="working-papers-heading">Preprints <span class="section-count">{{ site.data.working_papers.size }}</span></h2>
   {% assign working_papers = site.data.working_papers | sort: 'year' | reverse %}
   {% for manuscript in working_papers %}{% include working-paper.html manuscript=manuscript %}{% endfor %}
 </section>
